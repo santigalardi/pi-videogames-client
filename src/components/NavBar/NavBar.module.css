@@ -1,0 +1,62 @@
+.navbar {
+  margin: 20px;
+  display: flex;
+  justify-content: space-around;
+  padding: 0 70px;
+  align-items: center;
+  height: 10vh;
+  background-color: #1b202c;
+}
+
+.logoContainer {
+  display: flex;
+  width: 50%;
+  justify-content: center;
+}
+
+.logo {
+  font-size: 15px;
+  font-family: 'Kdam Thmor Pro', sans-serif;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.5s;
+}
+
+.logo:hover {
+  transform: scale(1.05);
+  filter: invert(57%) sepia(98%) saturate(1140%) hue-rotate(1deg) brightness(135%) contrast(102%);
+}
+
+.icon {
+  height: 40px;
+  margin: 10px;
+  filter: invert(94%) sepia(6%) saturate(26%) hue-rotate(257deg) brightness(107%) contrast(107%);
+}
+
+.createContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.create {
+  font-size: 15px;
+  font-weight: 800;
+  color: rgb(255, 255, 255);
+  text-shadow: 1px 2px 3px black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+
+.create:hover {
+  color: #ffa500;
+  text-shadow: 1px 2px 2px black;
+}
+
+.activeLink {
+  text-decoration: none;
+}

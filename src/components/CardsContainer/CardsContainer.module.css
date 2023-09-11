@@ -1,0 +1,25 @@
+.cardsContainer {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.link {
+  text-decoration: none;
+  color: white;
+}
+
+.filters {
+  display: flex;
+  justify-content: center;
+  padding: 30px;
+}
+
+.filter {
+  margin: 20px;
+}
+
+.filter label {
+  padding: 10px;
+}
