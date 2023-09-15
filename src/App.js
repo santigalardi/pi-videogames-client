@@ -4,6 +4,7 @@ import { Route, useLocation } from 'react-router-dom';
 import './App.css';
 import axios from 'axios';
 axios.defaults.baseURL = 'https://pi-videogames-api-ayk8-dev.fl0.io/';
+// axios.defaults.baseURL = 'http://localhost:3001';
 
 function App() {
   const location = useLocation();
