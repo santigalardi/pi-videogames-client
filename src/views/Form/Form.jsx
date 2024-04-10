@@ -48,11 +48,12 @@ const Form = () => {
 
       if (form.image === '') {
         newErrors.image = '';
-    } else if (/^(https?:\/\/)?(?:[a-zA-Z0-9-]+\.)+[a-zA-Z]{2,6}(?:\/[^/#?]+)+\.(?:jpg|jpeg|png|gif|bmp|webp)$/i.test(form.image)) {
+    } else if (/^https?:\/\/(?:[a-zA-Z0-9-]+\.)+[a-zA-Z]{2,6}(?:\/[^/#?]+)+\.(?:jpg|jpeg|png|gif|webp)(?:\?.*)?$/.test(form.image)) {
         newErrors.image = '';
     } else {
         newErrors.image = 'Must be a valid image URL';
     }
+    
     
     
 
