@@ -48,11 +48,13 @@ const Form = () => {
 
       if (form.image === '') {
         newErrors.image = '';
-      } else if (/^(https?:\/\/)?[\w.-]+\.[a-zA-Z]{2,}(\/[\w.-]*)*\/?$/.test(form.image)) {
+    } else if (/^(https?:\/\/)?(?:[a-zA-Z0-9-]+\.)+[a-zA-Z]{2,6}(?:\/[^/#?]+)+\.(?:jpg|jpeg|png|gif|bmp|webp)$/i.test(form.image)) {
         newErrors.image = '';
-      } else {
-        newErrors.image = 'Must be a valid URL';
-      }
+    } else {
+        newErrors.image = 'Must be a valid image URL';
+    }
+    
+    
 
       if (form.platforms.length > 0) newErrors.platforms = '';
 
@@ -126,7 +128,8 @@ const Form = () => {
     event.preventDefault();
 
     axios
-      .get(`https://pi-videogames-production-fddd.up.railway.app/videogames`)
+      .get(`https://pi-videogames-api-xrjy.onrender.com/videogames`)
+      // .get(`http://localhost:3000/videogames`)
       .then((response) => {
         const allVideogames = response.data;
 
